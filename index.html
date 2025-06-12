@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Velas Zen</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f3f2ef;
+      color: #2f2f2f;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #d4d7cd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-info i {
+      font-size: 30px;
+    }
+
+    .search-menu {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-menu input {
+      padding: 6px 12px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    .sidebar {
+      background: #e9ece5;
+      padding: 20px;
+      border-radius: 10px;
+      width: 260px;
+      min-width: 230px;
+    }
+
+    .sidebar h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin-bottom: 12px;
+      text-decoration: none;
+    }
+
+    .sidebar button {
+      width: 100%;
+      padding: 10px;
+      background-color: #f5f0eb;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .sidebar button:hover {
+      background-color: #dad8d2;
+    }
+
+    .gallery {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: #d4d7cd;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #000;
+      font-size: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+
+</style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="user-info">
+
+        <i class="fas fa-user-circle"></i>
+
+      <div>
+
+        <p><strong id="username">Nombre de usuario</strong></p>
+
+        <p>Hola <span id="user-greeting">usuario</span></p>
+
+    </div>
+
+</div>
+
+    <div class="search-menu">
+
+        <input type="text" placeholder="Buscar..." />
+
+        <i class="fas fa-bars"></i>
+
+    </div>
+
+</header>
+
+  <main>
+
+    <div class="sidebar">
+
+        <h1>Velas<br>Zen</h1>
+
+        <a href="producto.html"><button>Producto y diseños</button></a>
+
+        <a href="diseños.html"><button>Diseños de temporada</button></a>
+
+        <a href="preguntas.html"><button>Preguntas frecuentes</button></a>
+
+        <a href="sobrenosotros.html"><button>Sobre nosotros</button></a>
+
+    </div>
+
+    <div class="gallery">
+
+        <img src="https://http2.mlstatic.com/D_NQ_NP_854342-MLU76262489441_052024-O.webp" alt="Vela 1" />
+
+        <img src="https://http2.mlstatic.com/D_NQ_NP_656552-MLU76263425603_052024-O.webp" alt="Vela 2" />
+
+        <img src="https://s.alicdn.com/@sc04/kf/Hc31d9144cfa74995b64c91b6313b2cd7v.jpg_720x720q50.jpg" alt="Vela 3" />
+
+    </div>
+
+</main>
+
+  <footer>
+
+    <span>Redes sociales</span>
+
+    <a href="https://www.facebook.com/velasamoravela/?locale=es_LA" target="_blank"><i class="fab fa-facebook"></i></a>
+
+    <a href="https://www.instagram.com/velasdelafe/#" target="_blank"><i class="fab fa-instagram"></i></a>
+
+    <a href="https://x.com/MigueUrream429" target="_blank"><i class="fab fa-twitter"></i></a>
+
+</footer>
+
+  <script>
+
+let nombre = prompt("¿Cuál es tu nombre?");
+
+    if (!nombre || nombre.trim() === "") {
+
+        nombre = "Invitado";
+
+    }
+
+    document.getElementById("username").textContent = nombre;
+
+    document.getElementById("user-greeting").textContent = nombre;
+
+</script>
+
+</body>
+
+</html>

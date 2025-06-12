@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Preguntas Frecuentes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #d4d7cd;
+    color: #2e2e2e;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info i {
+    font-size: 24px;
+}
+
+.search-menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-menu input {
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.sidebar {
+    background: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    width: 260px;
+}
+
+.sidebar h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f5f0eb;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar button:hover {
+    background: #e3e3e3;
+}
+
+.gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.faq-card {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.faq-card:hover {
+    transform: scale(1.01);
+}
+
+.faq-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.faq-card p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    font-size: 14px;
+    gap: 15px;
+    background-color: #f5f5f5;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer i {
+    font-size: 22px;
+}
+   
+   </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="user-info">
+
+        <i class="fas fa-user-circle"></i>
+
+        <div>
+
+            <p><strong>Nombre de usuario</strong></p>
+
+            <p>Hola usuario</p>
+
+        </div>
+
+    </div>
+
+    <div class="search-menu">
+
+        <input type="text" placeholder="Buscar...">
+
+        <i class="fas fa-bars"></i>
+
+    </div>
+
+</header>
+
+<main>
+
+    <div class="sidebar">
+
+        <h1>Velas<br>relajantes</h1>
+
+        <a href="index.html"><button>Inicio</button></a>
+
+    </div>
+
+    <div class="gallery">
+
+        <h2>Preguntas Frecuentes sobre Envíos</h2>
+
+        <div class="faq-card">
+
+            <h3>¿Cuánto tardan los envíos?</h3>
+
+            <p>Los envíos nacionales tardan entre 2 y 5 días hábiles, mientas que los internacionales pueden llegar a tardar entre 7 y 15 días.</p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <h3>¿Cómo puedo rastrear mi pedido?</h3>
+
+            <p>Recibirás un correo con el número de guía y un enlace para rastrear tu paquete.</p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <h3>¿Hacen envíos internacionales?</h3>
+
+            <p> Sí, realizamos envíos a varios países.</p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <h3>¿Qué hago si mi vela llega rota?</h3>
+
+            <p>Contáctanos inmediatamente con una foto del producto y tu número de pedido, luego se te enviara una reposición sin costo adicional.</p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <h3>¿Puedo cancelar un pedido?</h3>
+
+            <p>Solo puedes cancelar dentro de las primeras 2 horas después de haber hecho el pedido.</p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <h3>¿Qué métodos de pago aceptan?</h3>
+
+            <p>Aceptamos tarjetas de crédito, débito, PayPal y transferencias bancarias.</p>
+
+        </div>
+
+        <div class="faq-card">
+
+            <h3>¿Puedo pedir velas personalizadas?</h3>
+
+            <p>Sí, ofrecemos velas con diseños y aromas personalizados.</p>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <span>Redes sociales</span>
+
+    <a href="https://www.facebook.com/velasamoravela/?locale=es_LA" target="_blank">
+
+        <i class="fab fa-facebook"></i>
+
+    </a>
+
+    <a href="https://www.instagram.com/velasdelafe/#" target="_blank">
+
+        <i class="fab fa-instagram"></i>
+
+    </a>
+
+    <a href="https://x.com/MigueUrream429" target="_blank">
+
+        <i class="fab fa-twitter"></i>
+
+    </a>
+
+</footer>
+
+</body>
+
+</html>

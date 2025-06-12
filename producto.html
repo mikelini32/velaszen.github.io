@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Velas Originales</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f8f7f3;
+      color: #333;
+    }
+
+    header {
+      background-color: #d4d7cd;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-info i {
+      font-size: 30px;
+    }
+
+    .search-menu {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-menu input {
+      padding: 6px 12px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+
+    main {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 260px;
+      padding: 20px;
+      background-color: #ecebe6;
+    }
+
+    .sidebar h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    .sidebar button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .sidebar button:hover {
+      background-color: #ddd;
+    }
+
+    .gallery {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .gallery h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .gallery p {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .product-card button {
+      padding: 8px 12px;
+      background-color: #c6c2b9;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .product-card button:hover {
+      background-color: #a6a39b;
+    }
+
+    footer {
+      background-color: #d4d7cd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #000;
+      font-size: 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #555;
+    }
+  
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="user-info">
+
+        <i class="fas fa-user-circle"></i>
+
+        <div>
+
+            <p><strong>Nombre de usuario</strong></p>
+
+            <p>Hola usuario</p>
+
+        </div>
+
+    </div>
+
+    <div class="search-menu">
+
+        <input type="text" placeholder="Buscar..." />
+
+        <i class="fas fa-bars"></i>
+
+    </div>
+
+</header>
+
+  <main>
+
+    <div class="sidebar">
+
+        <h1>Velas<br>Originales</h1>
+
+        <a href="ecomerce.html"><button>Inicio</button></a>
+
+    </div>
+
+    <div class="gallery">
+
+      <h2>Nuestras Velas Exclusivas</h2>
+      
+      <p>Una colección única creada para generar emociones, memorias y paz interior.</p>
+      
+      <div class="product-grid">
+
+        <div class="product-card">
+
+            <img src="https://luminiere.co/wp-content/uploads/2023/08/LUNA-1-PLANETAS-768x1097.jpg" alt="Brisa de Luna">
+
+            <h3>Brisa de Luna</h3>
+
+            <p>Notas suaves de eucalipto y jazmín.</p>
+
+          <button>Comprar</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="https://almasilvestre.cl/wp-content/uploads/2025/02/vela-380cc-1-768x768.jpg" alt="Alma Silvestre">
+
+            <h3>Alma Silvestre</h3>
+
+            <p>Frescura herbal con toques de bosque.</p>
+
+            <button>Comprar</button>
+
+        </div>
+
+        <div class="product-card">
+         
+            <img src="https://http2.mlstatic.com/D_NQ_NP_678721-MCO81881197028_012025-O.webp" alt="Susurro de Cedro">
+         
+            <h3>Susurro de Cedro</h3>
+         
+            <p>Aroma amaderado reconfortante y relajante.</p>
+         
+            <button>Comprar</button>
+        
+        </div>
+
+        <div class="product-card">
+        
+            <img src="https://iluminata.com/cdn/shop/files/lavanda-2.jpg?v=1746052652&width=1445" alt="Viento de Lavanda">
+        
+            <h3>Viento de Lavanda</h3>
+        
+            <p>Lavanda fresca con un toque de limón.</p>
+        
+            <button>Comprar</button>
+        
+        </div>
+
+        <div class="product-card">
+          
+            <img src="https://decoracionconcorazon.com/3072-large_default/vela-piramide-tierra-conectada.jpg" alt="Tierra Sagrada">
+          
+            <h3>Tierra Sagrada</h3>
+          
+            <p>Base terrosa con incienso y mirra.</p>
+          
+            <button>Comprar</button>
+        
+        </div>
+
+        <div class="product-card">
+
+            <img src="https://m.media-amazon.com/images/I/510zDkRKGFL.jpg" alt="Niebla de Vainilla">
+
+            <h3>Niebla de Vainilla</h3>
+
+            <p>Dulzura envolvente con toques de crema y azúcar tostada.</p>
+
+            <button>Comprar</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="https://www.cronista.com/files/image/1021/1021953/674dc07e70595.jpg" alt="Ritual de Rosas">
+
+            <h3>Ritual de Rosas</h3>
+
+            <p>Elegante y romántica, con pétalos de rosa fresca y almizcle.</p>
+
+            <button>Comprar</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="https://bohek.com.co/wp-content/uploads/2024/06/3-7.png" alt="Aurora Cítrica">          
+            
+            <h3>Aurora Cítrica</h3>
+
+            <p>Explosión cítrica con bergamota, toronja y limón.</p>
+
+            <button>Comprar</button>
+
+        </div>
+
+        <div class="product-card">
+       
+            <img src="https://i.etsystatic.com/31894850/r/il/66638e/5733272964/il_fullxfull.5733272964_eo36.jpg" alt="Poesia cafe">
+       
+            <h3>Café y Poesía</h3>
+       
+            <p>Notas intensas de café, caramelo y madera tostada.</p>
+       
+            <button>Comprar</button>
+       
+        </div>
+
+        <div class="product-card">
+       
+            <img src="https://waldos.com.mx/cdn/shop/products/100080155OLIVO-_1.jpg?v=1668554127" alt="Noche de Té Verde">
+       
+            <h3>Noche de Té Verde</h3>
+       
+            <p>Refrescante y limpio, ideal para despejar la mente.</p>
+       
+            <button>Comprar</button>
+       
+        </div>
+
+        <div class="product-card">
+       
+            <img src="https://www.ikea.com/co/es/images/products/stoertskoen-vela-aromatica-en-vaso-de-vidrio-frutos-del-bosque-rojo__1060651_pe850110_s5.jpg?f=xs" alt="Travesía del Bosque">
+       
+            <h3>Travesía del Bosque</h3>
+       
+            <p>Una mezcla de pino, musgo y tierra húmeda.</p>
+       
+            <button>Comprar</button>
+       
+        </div>
+
+        <div class="product-card">
+       
+            <img src="https://plantiviris.com/cdn/shop/files/21.png?v=1689894248" alt="Fuego Interior">
+       
+          <h3>Fuego Interior</h3>
+       
+          <p>Picante y cálida, con notas de canela, clavo y ámbar.</p>
+       
+          <button>Comprar</button>
+       
+        </div>
+
+        <div class="product-card">
+       
+            <img src="https://exitocol.vtexassets.com/arquivos/ids/25850240/vela-onecandles-asimetrica-9-oz-pabilos-de-madera-envase-de-vidrio-aroma-limon.jpg?v=638700454475930000" alt="Menta Boreal">
+       
+            <h3>Menta Boreal</h3>
+       
+            <p>Refrescante y energizante, con menta y eucalipto.</p>
+       
+            <button>Comprar</button>
+       
+        </div>
+
+        <div class="product-card">
+       
+            <img src="https://http2.mlstatic.com/D_NQ_NP_978803-MLU49635733799_042022-O.webp" alt="Pétalos de Miel">
+       
+            <h3>Pétalos de Miel</h3>
+       
+            <p>Dulce floral con miel silvestre y gardenias.</p>
+       
+            <button>Comprar</button>
+       
+        </div>
+
+        <div class="product-card">
+       
+            <img src="https://d2sapt5dytmohl.cloudfront.net/images/upload/30533/card/65132a388c9927.48624128.jpg" alt="Eclipse tropical">
+       
+            <h3>Eclipse tropical</h3>
+       
+            <p>Olores tropicales con un toque de vainilla oscura.</p>
+       
+          <button>Comprar</button>
+       
+        </div>
+
+    </div>
+
+    </div>
+
+</main>
+
+  <footer>
+
+    <span>Redes sociales</span>
+
+    <a href="https://www.facebook.com/velasamoravela/?locale=es_LA" target="_blank"><i class="fab fa-facebook"></i></a>
+
+    <a href="https://www.instagram.com/velasdelafe/#" target="_blank"><i class="fab fa-instagram"></i></a>
+
+    <a href="https://x.com/MigueUrream429" target="_blank"><i class="fab fa-twitter"></i></a>
+
+</footer>
+
+</body>
+
+</html>
